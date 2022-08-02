@@ -1,0 +1,39 @@
+pipeline {
+ agent any
+ environment {
+  dotnet = 'C:\\Program Files\\dotnet\\dotnet.exe'
+ }
+ stages {
+  stage('Checkout') {
+   steps {
+    git credentialsId: 'none',
+    url: 'https://github.com/Raj74629/Capstone-Project.git', branch: 'main'
+   }
+  }
+  stage('Restore packages'){
+   steps{
+      bat "dotnet restore OnlineShop\\WebAPI.csproj"
+     }
+  }
+  stage('Clean'){
+    steps{
+        bat "dotnet clean OnlineShop\\WebAPI.csproj"
+     }
+   }
+ stage('Build') {
+   steps {
+    bat 'dotnet build OnlineShop.sln --configuration Release'
+   }
+  }
+  stage('Test') {
+   steps {
+    bat 'dotnet test SeleniumTest\\SeleniumTest.csproj --logger:trx'
+   }
+  }
+  stage('Publish'){
+     steps{
+       bat "dotnet publish OnlineShop\\WebAPI.csproj "
+     }
+}
+ }
+}
