@@ -1,0 +1,7 @@
+D:\Phase4 project\OnlineShop\obj\Debug\net6.0\OnlineShop.csproj.AssemblyReference.cache
+D:\Phase4 project\OnlineShop\obj\Debug\net6.0\OnlineShop.GeneratedMSBuildEditorConfig.editorconfig
+D:\Phase4 project\OnlineShop\obj\Debug\net6.0\OnlineShop.AssemblyInfoInputs.cache
+D:\Phase4 project\OnlineShop\obj\Debug\net6.0\OnlineShop.AssemblyInfo.cs
+D:\Phase4 project\OnlineShop\obj\Debug\net6.0\OnlineShop.csproj.CoreCompileInputs.cache
+D:\Phase4 project\OnlineShop\obj\Debug\net6.0\OnlineShop.MvcApplicationPartsAssemblyInfo.cs
+D:\Phase4 project\OnlineShop\obj\Debug\net6.0\OnlineShop.MvcApplicationPartsAssemblyInfo.cache
